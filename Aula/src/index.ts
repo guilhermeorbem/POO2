@@ -28,8 +28,32 @@ class Time {
         return this._derrotas
     }
 
+    set derrotas(derrotas: number) {
+        this._derrotas = derrotas
+    }
+
 }
 
+class Jogador extends Time {
+
+    private _nr_camisa: number = 0
+    private _nome: string = ''
+
+    constructor(nr_camisa: number, nome: string) {
+        super(0, 0, 24, "Felipão", "Parmera")
+
+        this._nr_camisa = nr_camisa
+        this._nome = nome
+    }
+    
+}
+
+let jogador = new Jogador(10, "Paquetá");
+
+console.log(jogador)
+
+
+/*
 let time = new Time(0, 0, 24, "Felipão", "Parmera")
 
 console.log("Numero de Vitórias " + time.vitorias)
@@ -40,3 +64,5 @@ console.log("Quantidade de Jogadores ",time.qtd_jogadores)
 console.log("Técnico ",time.tecnico)
 console.log("Nome ",time.nome)
 console.log("Numero de Vitórias " + time.vitorias)
+
+*/
