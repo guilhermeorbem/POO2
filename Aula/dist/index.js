@@ -1,32 +1,7 @@
 "use strict";
-class Time {
-    constructor(vitorias, derrotas, qtd_jogadores, tecnico, nome) {
-        this._vitorias = vitorias;
-        this._derrotas = derrotas;
-        this.qtd_jogadores = qtd_jogadores;
-        this.tecnico = tecnico;
-        this.nome = nome;
-    }
-    get vitorias() {
-        return this._vitorias;
-    }
-    set vitorias(vitorias) {
-        this._vitorias = vitorias;
-    }
-    get derrotas() {
-        return this._derrotas;
-    }
-}
-class Jogador extends Time {
-    constructor(nr_camisa, nome) {
-        super(0, 0, 24, "Felipão", "Parmera");
-        this.nr_camisa = 0;
-        this.nome = '';
-        this.nr_camisa = nr_camisa;
-        this.nome = nome;
-    }
-}
-let jogador = new Jogador(10, "Paquetá");
+Object.defineProperty(exports, "__esModule", { value: true });
+const jogador_1 = require("./model/jogador");
+let jogador = new jogador_1.Jogador(10, "Paquetá");
 console.log(jogador);
 /*
 let time = new Time(0, 0, 24, "Felipão", "Parmera")
