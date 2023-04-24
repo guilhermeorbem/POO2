@@ -1,0 +1,9 @@
+# Ignore os arquivos de .js
+.js
+
+# Ignore a pasta node_modules
+node_modules
+
+# Ignore a pasta dist
+dist
+
